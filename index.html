@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!--  -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--  -->
+    <title>Brayan Lima</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/menu.js" defer ></script>
+    <!-- Defer serve para -->
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class = "logo"> 
+                <a href="#"> <!--Criando um link para o inicio da página quando clicar na logo-->
+                    <img src="assets/img/LogoBrayanLima.png" alt="Logo Brayan Lima"> 
+                </a> 
+            </div>
+            <nav class = "menu-desktop">
+                <ul>
+                    <li><a href="#topo-site">Inicio</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#linha-do-tempo">Experiência</a></li>
+                    <li><a href="#linha-do-tempo">Escolaridade</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button>Contato</button>
+                </a>
+            </div>
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#topo-site">Inicio</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#linha-do-tempo">Experiência</a></li>
+                        <li><a href="#linha-do-tempo">Escolaridade</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-site" id="topo-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>MUITO PRAZER, ME CHAMO <span> BRAYAN LIMA.</span></h1>
+                        <p>Estudante de Ciência da Computação na Atitus e futuro <span>Dev</span>.<br>
+                            Estou em busca de uma oportunidade para iniciar minha carreira na área da programação.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="assets/img/FotoBrayanLima.jpg" alt="Brayan Lima">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="projetos" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    <div class="projetos-box">
+                        <i class="bi bi-braces"></i>
+                        <h3>Projeto Lixeira Inteligente</h3>
+                        <a href="#"></a>
+                        <p>Feito em C++, realizamos este trabalho para a disciplina de robótica.
+                            Foi utilizados componentes como Arduino e sensores ultrassônicos.
+                        </p>
+                        <a href="https://github.com/diegotrevisancc/lixeira-inteligente.git">Acesse aqui</a>
+                    </div>
+                    <div class="projetos-box">
+                        <i class="bi bi-filetype-py"></i>
+                        <h3>Projeto PyGame - ZumbieSurvival</h3>
+                        <p>Desafiados a fazer um jogo em python na faculdade, decidi construir um jogo de sobrevivência
+                            com zumbis, onde o jogador deve sobreviver o maior tempo possível.</p>
+                            <a href="https://github.com/Syyyck/Projeto-pyGame---ZombieSurvival-1.git">Acesse aqui</a>
+                    </div>
+                    <div class="projetos-box">
+                        <i class="bi bi-filetype-java"></i>
+                        <h3>Sistema biblioteca</h3>
+                        <a href="#"></a>
+                        <p>Trabalho feito para a faculdade, trabalhamos com a linguagem Java para criar uma biblioteca para cadastrar, 
+                            listar e remover livros. Com este trabalho consegui aprender alguns conceitos dos pilares da Programação OO 
+                            e os principais comandos e técnicas que utilizamos na linguagem.</p>
+                            <a href="https://github.com/Syyyck/Trabalho-Biblioteca---Atitus.git">Acesse aqui</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="assets/img/fotoPerfil.png" alt="Foto Brayan Lima">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>UM POUCO SOBRE MIM<span></span></h2>
+                        <p>Tenho 20 anos e desde a adolescência sempre procurei escolher o melhor caminho
+                            para minha carreira, dessa forma, decidi construir meu futuro na área 
+                            da tecnologia.
+                        </p>
+                        <p>Quando encerrei meu ensino médio aos 17, decidi começar CC na Atitus, porém,
+                            por conta de uma dúvida que eu tinha desde criança, entrei para o exército para
+                            decidir em qual caminho segui. Lá, tive a oportunidade de trabalhar na seção de informática 
+                            por quase 2 anos e fui promovido a Cabo, nesse tempo aprendi muito sobre manutenção de computadores, 
+                            gerenciamento de redes e liderança. <br>
+                            Atualmente estou de volta a faculdade, onde estou aprendendo mais sobre programação e desenvolvimento de sistemas. 
+
+
+                        </p>
+                            <div class="btn-rede-social">
+                                <a href="https://www.instagram.com/_lbrayan/"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.linkedin.com/in/perfilbrayanlima/"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://wa.me/5554992143085"><button><i class="bi bi-whatsapp"></i></button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="linha-do-tempo">
+            <div class="interface">
+                <div class="flex">
+                    <!-- Linha do Tempo - Experiência Profissional -->
+                    <div class="linha-tempo">
+                        <h3>Experiência Profissional</h3>
+                        <div class="evento">
+                            <div class="data">2023 - Atualmente</div>
+                            <div class="descricao">
+                                <h4>TI na empresa MLTech</h4>
+                                <p>Atualmente trabalho como técnico em informática lidando com
+                                    manutenção de computadores, notebooks, impressoras, formatação e
+                                    Instalações de redes de internets em empresas.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="evento">
+                            <div class="data">2023 - 2025</div>
+                            <div class="descricao">
+                                <h4>Seção de informática do Exército Brasileiro</h4>
+                                <p>Em 2024 promovido a Cabo, trabalhei 
+                                    dentro da seção de Informática do 6ºRCB, lá adquiri conhecimento
+                                    em manutenção de computadores, formatação, gerenciamento de redes, 
+                                    e experiência em liderar uma pequena equipe.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Linha do Tempo - Estudos -->
+                    <div class="linha-tempo" id="linha-do-tempo">
+                        <h3>Estudos</h3>
+                        <div class="evento">
+                            <div class="data">Atualmente</div>
+                            <div class="descricao">
+                                <h4>Curso de Ciência da Computação</h4>
+                                <p>Cursando na universidade Atitus, estou no segundo semestre. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="formulario"id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Seu nome: "required> 
+                        <input type="email" name="" id="" placeholder="Seu e-mail: " required> 
+                        <input type="text" name="" id="" placeholder="Seu celular: ">
+                        <textarea name="" id="" placeholder="Sua mensagem: "></textarea required> </textarea>
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="linha-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="assets/img/LogoBrayanLima.png" alt="Logo Brayan Lima">
+                    </div>
+                    <div class="btn-rede-social">
+                        <a href="https://www.instagram.com/_lbrayan/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/perfilbrayanlima/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://wa.me/5554992143085"><button><i class="bi bi-whatsapp"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linha-footer borda" >
+                <p>
+                    <i class="bi bi-envelope"></i> <a href="mailto:brayandelimapf@gmail.com">brayandelimapf@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+<!--Elementos para estudar
+Classe button
+Listas não ordenadas ul e li
+header > .interface 
+propriedades de display flex
+propriedades de inline e block
+kayframes
+-->

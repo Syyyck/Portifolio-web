@@ -1,0 +1,557 @@
+/*Configurações Gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(2, 0, 15);
+    height: 100px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(84, 80, 159);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    /* cursor pointer deixar o cursor do mouse com a mão do click */
+    transition: .2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px rgb(23, 0, 173);
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+.btn-rede-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(84, 80, 159);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: white;
+    transition: .2s;
+}
+
+
+
+
+/* CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header>.interface {
+    /* Aqui em cima, fala que estes estilos serão somente para 
+    a classe interface dentro da tag */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header nav.menu-desktop a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transform: scale(1.5);
+    transition: .2s;
+}
+
+/* Menu Mobile */
+.btn-menu-mobile i {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.menu-mobile {
+    background-color: rgb(2, 0, 15);
+    height: 100vh;
+    /* vh preenche toda a altura da tela */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 60%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.btn-menu-mobile {
+    display: none;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar i {
+    font-size: 30px;
+    color: royalblue;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li:hover {
+    color: rgb(13, 0, 255);
+    font-weight: 600;
+}
+
+.menu-mobile nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: royalblue;
+}
+
+
+/* TOPO DO SITE */
+section.topo-site {
+    padding: 80px 4%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.topo-site .img-topo-site img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.457);
+}
+
+.topo-site h1 {
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+}
+
+.txt-topo-site h1 span {
+    color: rgb(55, 49, 154);
+    line-height: normal;
+    font-size: 42px;
+}
+
+.topo-site .txt-topo-site p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 40px 0;
+}
+
+.topo-site .txt-topo-site p span {
+    color: rgb(55, 49, 154);
+    font-style: initial
+}
+
+.topo-site .img-topo-site {
+    position: relative;
+    animation: flutuando 1.5s ease-in-out infinite alternate;
+
+}
+
+/* PROJETOS */
+section.projetos {
+    margin-top: 0;
+    padding: 20px 4%;
+}
+
+h2.titulo span {
+    color: rgb(55, 49, 154);
+}
+
+section.projetos .flex {
+    gap: 60px;
+}
+
+.projetos .projetos-box {
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 20px;
+    border: 0.2px solid rgba(255, 255, 255, 0.04);
+    margin-top: 40px;
+    transition: .2s;
+}
+
+.projetos .projetos-box i {
+    font-size: 58px;
+    color: rgb(55, 49, 154);
+}
+
+.projetos .projetos-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.projetos .projetos-box p {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.projetos .projetos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.457);
+}
+
+/* SOBRE MIM */
+section.sobre {
+    padding: 120px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre {
+    color: rgb(255, 255, 255);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(55, 49, 154);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+
+/* LINHA DO TEMPO */
+.linha-do-tempo {
+    padding: 80px 4%;
+}
+
+.linha-do-tempo .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.linha-tempo {
+    width: 48%;
+    /* Para deixar as linhas lado a lado */
+    position: relative;
+
+}
+
+.linha-tempo h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.linha-tempo .evento {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.linha-tempo .data {
+    font-weight: bold;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.linha-tempo .descricao h4 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.linha-tempo .descricao p {
+    color: #dcdcdc;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+
+/* FORMULARIO */
+section.formulario {
+    padding: 80x 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgba(33, 32, 32, 0.483);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(84, 80, 159);
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 80px;
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(70, 70, 70, 0.379);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .linha-footer {
+    padding: 20px 0;
+}
+
+footer .linha-footer p i {
+    color: rgb(84, 80, 159);
+}
+
+footer .linha-footer p a {
+    color: rgb(255, 255, 255);
+}
+
+.borda {
+    border-top: 0.2px solid rgb(84, 80, 159);
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* Gerais */
+    .flex {
+        /* flex direction: row, column, -reverse */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-menu-mobile {
+        display: block;
+    }
+
+    /* Topo site */
+    .topo-site {
+        padding: 40px 8%;
+    }
+
+    .topo-site .flex {
+        gap: 0px;
+    }
+
+    .topo-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-site h1 span {
+        font-size: 40px;
+    }
+
+    .topo-site .img-topo-site {
+        max-width: 400px;
+        height: 100%;
+    }
+
+    /* Projetos */
+    section.projetos {
+        padding: 120px 8%;
+    }
+
+    .projetos .flex {
+        margin-top: 60px;
+    }
+
+    .projetos .projetos-box {
+        padding: 40px;
+        margin-top: 0px;
+    }
+
+    /* Sobre */
+    section.sobre {
+        margin: 60;
+        padding: 40px 8%;
+    }
+
+
+    .sobre .txt-sobre {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-rede-social {
+        margin-top: 40px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* Linha do tempo */
+    .linha-do-tempo .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha-tempo {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* Rodapé */
+    footer .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .linha-footer {
+        text-align: center;
+    }
+
+    /* Formulario */
+    section.formulario {
+        padding: 80px 8%;
+    }
+}
+
+@keyframes flutuando {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
